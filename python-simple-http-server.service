@@ -1,0 +1,9 @@
+[Unit]
+Description=Python Simple HTTP Server
+
+[Service]
+User=jenkins
+ExecStart=/opt/python-simple-http-server/app.py
+
+[Install]
+WantedBy=multi-user.target

@@ -1,6 +1,6 @@
 .PHONY = install uninstall
 
-NAME = python-simple-http-server
+NAME = python-systemd-http-server
 INSTALL_LOCATION = /opt/${NAME}
 SERVICE_SCRIPT = /etc/systemd/system/${NAME}.service
 

@@ -3,6 +3,7 @@ Description=Python Simple HTTP Server
 
 [Service]
 User=jenkins
+WorkingDirectory=/opt/python-simple-http-server/public
 ExecStart=/opt/python-simple-http-server/app.py
 
 [Install]

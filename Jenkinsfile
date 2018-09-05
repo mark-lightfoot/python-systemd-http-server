@@ -1,5 +1,5 @@
-pipeline {
-  environment {
+node {
+/*  environment {
     registry = "localhost:5000/pyserver"
   }
   agent any
@@ -11,5 +11,6 @@ pipeline {
         }
       }
     }
-  }
+  }*/
+  print("hello my friends!")
 }

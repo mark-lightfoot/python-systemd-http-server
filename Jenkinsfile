@@ -12,5 +12,5 @@ node {
       }
     }
   }*/
-  print("hello my friends!")
+  println("hello my friends!")
 }

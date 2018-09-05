@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import http.server
+import SimpleHTTPServer
 import SocketServer
 
 PORT = 9000

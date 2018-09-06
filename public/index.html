@@ -3,13 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Python: Simple HTTP Server</title>
-    <script>
-		$.getJSON("info.json", function (info) {
-			let host_name = `<p>hostname: ${info.host_name}</p>`
-			let version = `<p>version: ${info.version}</p>`
-			$('#info').html(host_name + version)
-		});
-    </script>	  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+     
   </head>
   <body>
 	<img src="https://vignette.wikia.nocookie.net/villains/images/8/8c/PSYCHONONOHD.jpg/revision/latest?cb=20171224165907">	 
@@ -18,6 +13,13 @@
 	<div>
 		<div id="info"></div>
 	</div>
+        <script>
+		$.getJSON("info.json", function (info) {
+			let host_name = `<p>hostname: ${info.host_name}</p>`
+			let version = `<p>version: ${info.version}</p>`
+			$('#info').html(host_name + version)
+		});
+        </script>	
 </body>
 </html>
 

@@ -11,6 +11,7 @@
 	<div>
 		<div id="info"></div>
 	</div>
+</body>
   	<script>
 		$.getJSON("info.json", function (info) {
 			let host_name = `<p>hostname: ${info.host_name}</p>`
@@ -18,6 +19,5 @@
 			$('#info').html(host_name + version)
 		});
   	</script>
-</body>
 </html>
 

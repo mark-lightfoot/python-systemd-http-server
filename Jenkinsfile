@@ -12,5 +12,5 @@ node {
       }
     }
   }*/
-  docker run hello-world
+  println("hello my friends")
 }

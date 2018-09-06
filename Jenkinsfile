@@ -1,4 +1,6 @@
 node {
-  sh "docker build -t py_server ."
-  sh "docker run -d -p 9000:9000 --name py_server py_server"
-}
+	git 'https://github.com/Bltt/python-systemd-http-server'
+	sh "sudo docker-compose down --remove-orphans" 
+	sh "sudo docker-compose build" 
+	sh "sudo docker-compose up -d"  
+} 
